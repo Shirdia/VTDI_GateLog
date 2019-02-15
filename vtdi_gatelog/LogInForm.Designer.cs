@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogInForm));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnreset = new System.Windows.Forms.Button();
+            this.btnlogin = new System.Windows.Forms.Button();
+            this.txtusername = new System.Windows.Forms.TextBox();
+            this.txtpassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,40 +45,42 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // button1
+            // btnreset
             // 
-            this.button1.Location = new System.Drawing.Point(602, 230);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 38);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Reset";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnreset.Location = new System.Drawing.Point(602, 230);
+            this.btnreset.Name = "btnreset";
+            this.btnreset.Size = new System.Drawing.Size(121, 38);
+            this.btnreset.TabIndex = 2;
+            this.btnreset.Text = "Reset";
+            this.btnreset.UseVisualStyleBackColor = true;
+            this.btnreset.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnlogin
             // 
-            this.button2.Location = new System.Drawing.Point(455, 230);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 37);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Login";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnlogin.Location = new System.Drawing.Point(455, 230);
+            this.btnlogin.Name = "btnlogin";
+            this.btnlogin.Size = new System.Drawing.Size(108, 37);
+            this.btnlogin.TabIndex = 3;
+            this.btnlogin.Text = "Login";
+            this.btnlogin.UseVisualStyleBackColor = true;
+            this.btnlogin.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox1
+            // txtusername
             // 
-            this.textBox1.Location = new System.Drawing.Point(527, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtusername.Location = new System.Drawing.Point(527, 92);
+            this.txtusername.Name = "txtusername";
+            this.txtusername.Size = new System.Drawing.Size(195, 20);
+            this.txtusername.TabIndex = 4;
+            this.txtusername.Click += new System.EventHandler(this.txtusername);
+            this.txtusername.TextChanged += new System.EventHandler(this.txtusername_TextChanged);
             // 
-            // textBox2
+            // txtpassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(527, 141);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(195, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtpassword.Location = new System.Drawing.Point(527, 141);
+            this.txtpassword.Name = "txtpassword";
+            this.txtpassword.PasswordChar = '*';
+            this.txtpassword.Size = new System.Drawing.Size(195, 20);
+            this.txtpassword.TabIndex = 5;
             // 
             // label1
             // 
@@ -121,10 +123,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtpassword);
+            this.Controls.Add(this.txtusername);
+            this.Controls.Add(this.btnlogin);
+            this.Controls.Add(this.btnreset);
             this.Name = "LogInForm";
             this.Text = "LogInForm";
             this.ResumeLayout(false);
@@ -135,10 +137,10 @@
         #endregion
 
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnreset;
+        private System.Windows.Forms.Button btnlogin;
+        private System.Windows.Forms.TextBox txtusername;
+        private System.Windows.Forms.TextBox txtpassword;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

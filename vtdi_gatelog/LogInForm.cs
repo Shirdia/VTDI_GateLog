@@ -27,6 +27,9 @@ namespace vtdi_gatelog
             LogInForm logIn = new LogInForm();
             logIn.MdiParent = this;
             logIn.Show();
-        }
+
+         }
+
+       
     }
 }
